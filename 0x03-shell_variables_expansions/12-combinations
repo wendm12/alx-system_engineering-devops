@@ -1,2 +1,2 @@
 #!/bin/bash
-cat {a..z}{a..z}|ls -l 
+echo {a..z}{a..z}|tr ' ' '\n'|sort|grep -v "oo" 
